@@ -1,0 +1,18 @@
+footer{
+	//@include bgColorWithAlpha($lightBackgroundColor, 0.8);
+	margin-top: $baseMargin;
+	padding: $baseMargin 0;
+	border-top: solid 2px $lightBackgroundColor;
+	overflow: hidden;
+	ul{
+		overflow: auto;
+		margin: $baseMargin/2 $baseMargin;
+		text-align: center;
+		li{
+			display: inline-block;
+			list-style-type: none;
+			//float: left;
+			margin-right: 10px;
+		}
+	}
+}

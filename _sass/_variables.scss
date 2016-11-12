@@ -1,0 +1,43 @@
+//- base sizes.
+	//- elements sizes.
+		$basePageWidth: 960px;
+
+	//- base font sizes.
+		$baseFontSize: 14px;
+		$baseFontLineHeight: $baseFontSize + 6px;
+		$baseHeadingSize: $baseFontSize*2;
+		$headerFontResizeFactor: 1.2;
+
+	//- radius size
+		$baseRadiusSize: 4px;
+
+
+//- colors
+
+	//- base colors
+		$baseFontColor: material-color('blue-grey', '100');
+		$pointColor: material-color('light-blue', '200');
+		$baseWhiteColor: #fff;
+
+	//- bg colors
+		$baseBackgroundColor: material-color('blue-grey', '900');
+		$lightBackgroundColor: material-color('blue-grey', '800');
+		$lighterBackgroundColor: material-color('blue-grey', '700');
+		$lightestBackgroundColor: material-color('blue-grey', '600');
+
+	//- font colors
+		$baseWhiteFontColor: $baseWhiteColor;
+		$headerColor: material-color('light-blue', '100');
+		$paragraphColor: material-color('light-blue', '200');
+
+
+//- Base Margins
+	$baseMargin: 20px;
+
+//- header variables 
+	$headerheight: 40px;
+
+//- post variables
+	$marginFromHeader: $headerheight;
+	$postHeaderHeight: 240px - $headerheight;
+	$postHeaderBackgroundHeight: 500px;

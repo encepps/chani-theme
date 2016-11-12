@@ -1,1 +1,21 @@
-@import "header";
+// Fonts and defaults
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import "_reset";
+@import 'sass-material-colors';
+
+// variable
+@import "_variables";
+
+// mixins
+@import "_mixin/_font-size-cal";
+@import "_mixin/_color-cal";
+
+// base
+@import "_base";
+
+// components
+@import "_header";
+@import "_footer";
+@import "_content";
+@import "_post/_base";
+@import "_page/_base";

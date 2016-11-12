@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="/resources/styles/common.css">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
-
+	{% seo %}
+	<meta itemprop="image" content="{{page.image}}">
+	<link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+	<!-- include external plugins. -->
+	{% include plugins.html %} 
 </head>
 <body>
+
 	{% include header.html %}
 	<div class="wrapper">
-		{{ content }}	
-	</div>	
+		{{content}}
+	</div>
+	{% include footer.html %}
+
+	<script id="dsq-count-scr" src="//qusi.disqus.com/count.js" async></script>
 </body>
 </html>

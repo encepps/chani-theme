@@ -1,0 +1,86 @@
+.post-wrapper{
+
+	overflow: visible;
+
+	.post-title-background {
+	    position: fixed;
+	    z-index: -1;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: $postHeaderBackgroundHeight;
+	    background-image: url("/assets/images/base-bg.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    &:before{
+	    	content: ' ';
+	    	width: 100%;
+	    	height: 100%;
+	    	background-color: rgba(55,71,79,0.4);
+	    	position: absolute;
+	    }
+	}
+
+	.post{
+		max-width: $basePageWidth;
+		margin: $baseMargin auto;
+
+		.post-header-thumbnail{
+			max-height: 80px;
+		}
+
+		.post-header{
+			//height: $postHeaderHeight;
+			margin: $baseMargin*2 0 $baseMargin*2;
+			overflow: hidden;
+			text-align: center;
+			//background-color: rgba(0,0,0,0.2);
+			color: $baseWhiteFontColor;
+			
+			h1{
+				font-size: $baseFontLineHeight*3;
+				line-height: $baseFontLineHeight*3;
+				margin: $baseMargin 0 $baseMargin/2;
+				color: #fff;
+			}
+
+			h2{
+				font-size: $baseFontLineHeight;
+				color: $baseFontColor;
+				margin-top: 0;
+			}
+
+			p{
+				margin-left: 0;
+				margin-top: $baseMargin/2;
+				&:first-child{
+					margin-top: 0;
+				}
+			}
+			.post-info{
+				// border-top: dashed 1px $baseWhiteColor;
+				padding: $baseMargin;
+				margin: $baseMargin auto 0;
+				width: $basePageWidth/2;
+				border-radius: $baseRadiusSize;
+				//@include bgColorWithAlpha($baseBackgroundColor, 0.4);
+			}
+		}
+
+		.post-content{
+			position: relative;
+			z-index: 1;
+			padding: $baseMargin*2;
+			background-color: $lightBackgroundColor;
+			box-shadow: 0 0 120px rgba(0,0,0,0.3);
+			border: solid 1em $lighterBackgroundColor;
+
+		}
+	}
+
+	@import "footnote";	
+	@import "disqus";
+	@import "tag";
+}
+

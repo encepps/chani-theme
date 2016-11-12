@@ -1,0 +1,16 @@
+header{
+	height: $baseFontLineHeight + ($baseMargin);
+	@include bgColorWithAlpha($lightBackgroundColor, 0.8);
+	overflow: hidden;
+	ul{
+		overflow: auto;
+		margin: $baseMargin/2 $baseMargin;
+		text-align: center;
+		li{
+			display: inline-block;
+			list-style-type: none;
+			//float: left;
+			margin-right: 10px;
+		}
+	}
+}

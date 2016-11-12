@@ -1,0 +1,17 @@
+---
+layout: page
+type: null
+---
+
+<aside class="lnb">
+	<ul>
+		{% for item in site.data[page.lnbdata] %}
+			<li>
+				<a href="{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</aside>
+<div class="content-wrapper">
+	{{content}}	
+</div>

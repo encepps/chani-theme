@@ -1,0 +1,29 @@
+.content-wrapper{
+	padding: $baseMargin;	
+	margin-left: 200px;
+}
+
+.centered-content-wrapper{
+	max-width: $basePageWidth;
+	margin: 0 auto;
+}
+
+aside.lnb{
+	border-right: solid 4px $lighterBackgroundColor;
+	height: 100%;
+	width: 200px;
+	position: absolute;
+	padding: $baseMargin;
+	font-size: headerFontSizeCal(3);
+	ul{
+		margin-top: 0;
+		li{
+			clear: right;
+			float: right;
+			margin-top: $baseMargin;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}
+}

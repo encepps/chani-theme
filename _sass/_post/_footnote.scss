@@ -1,0 +1,62 @@
+.footnotes{
+	margin: 40px 0 0;
+	padding-top: 20px;
+	border-top: solid 1px #aaa;
+
+	&:before{
+		content: "FOOTNOTES : ";
+		font-size: $baseHeadingSize;
+		margin-bottom: $baseMargin;
+		display: block;
+	}
+	
+	ol{
+		// margin-left: 40px;
+		counter-reset: footnote-counter;
+		overflow: hidden;
+		li{
+			display: block;
+			background-color: $lighterBackgroundColor;
+			position: relative;
+			padding: $baseMargin/2 $baseMargin/2 $baseMargin/2 $baseMargin*2;
+			margin-left: $baseMargin;
+			float: left;
+
+			&:first-child{
+				margin-left: 0;				
+			}
+
+			&:before{
+				content: counter(my-badass-counter) ". ";
+				counter-increment: my-badass-counter;
+				position: absolute;
+				left: 10px;
+			}
+		}
+	}
+	p{
+		margin-left: 0;
+	}
+}
+
+sup {
+	font-size: $baseFontSize/2;
+	top: -0.5em;
+	margin-left: 0.25em;
+	position: relative;
+	display: inline-block;
+	padding: 0 2px;
+	border-radius: $baseMargin/10;
+	background-color: $lighterBackgroundColor;
+}
+
+sub {
+	font-size: $baseFontSize/2;
+	bottom: -0.25em;
+	margin-left: 0.25em;
+	position: relative;
+	display: inline-block;
+	padding: 0 2px;
+	border-radius: $baseMargin/10;
+	background-color: $lighterBackgroundColor;
+}

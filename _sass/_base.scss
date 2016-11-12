@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color: $baseBackgroundColor;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: $baseFontColor;
+	font-size: $baseFontSize;
+	line-height: $baseFontLineHeight;
+	font-weight: lighter;
+	height: 100%;
+}
+
+// header
+h1{
+	font-size: $baseHeadingSize;
+	line-height: $baseHeadingSize+10;
+	margin: 40px 0 10px;
+	font-weight: bold;
+	color: $headerColor;
+
+	&:first-child{
+		margin: 0 0 10px;
+	}
+}
+
+h2{
+	font-size: headerFontSizeCal(2);
+	line-height: headerFontSizeCal(2)+10;
+	font-weight: bold;
+	margin: 20px 0 10px;
+	color: $headerColor;
+
+}
+
+h3{
+	font-size: headerFontSizeCal(3);
+	line-height: headerFontSizeCal(3)+10;
+	font-weight: normal;
+	margin: 20px 0 10px;
+	color: $headerColor;
+}
+
+h4{
+	font-size: headerFontSizeCal(4);
+	line-height: headerFontSizeCal(4)+10;
+	margin: 20px 0 10px;
+	color: $headerColor;
+}
+
+a{
+	text-decoration: none;
+	color: $pointColor;
+}
+
+b{
+	font-weight: bold;
+}
+
+p, ul{
+	margin-left: $baseMargin;
+}
+
+ul{
+	margin-top: $baseMargin;
+	li{
+		list-style-type: square;
+		margin-left: $baseMargin;
+		p{
+			margin-left: 0;
+		}
+		ul{
+			margin-top: 0;
+		}
+	}
+}
+
+code{
+	background-color: $lightestBackgroundColor;
+	border-radius: $baseRadiusSize;
+	padding: 0px 4px 2px;
+    display: inline-block;
+    // color: $baseWhiteFontColor;
+}
+
+pre.highlight{
+	display: block;
+	margin: $baseMargin;	
+}

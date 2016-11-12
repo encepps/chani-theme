@@ -1,0 +1,13 @@
+.tag-wrapper{
+	width: 100%;
+	overflow: hidden;
+	a{
+		display: inline-block;
+		float: left;
+		padding: $baseMargin/4;
+		margin: $baseMargin/4;
+		background-color: $lighterBackgroundColor;
+		border-radius: $baseRadiusSize;
+		color: $baseWhiteColor;
+	}
+}

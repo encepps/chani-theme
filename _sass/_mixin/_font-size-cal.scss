@@ -1,0 +1,3 @@
+@function headerFontSizeCal($level){
+	@return $baseHeadingSize/($headerFontResizeFactor+($level*0.2));
+}

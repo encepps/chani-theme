@@ -1,0 +1,14 @@
+.page{
+	margin: $baseMargin auto;
+	max-width: $basePageWidth;
+	&.fluid{
+		width: inherit;
+	}
+	h1{
+		text-align: left;
+		font-size: $baseHeadingSize*2;
+		margin-bottom: $baseMargin*2;
+	}
+}
+
+@import "tags";
