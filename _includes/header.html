@@ -1,0 +1,9 @@
+<header id="header">
+
+	<ul>
+		<li><a href="/" title="Home">Home</a></li>
+		{% for page in site.pages %}
+		<li><a href="{{page.url}}">{{page.title}}</a></li>
+		{% endfor %}
+	</ul>
+</header><!-- /header -->
