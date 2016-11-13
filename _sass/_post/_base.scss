@@ -62,7 +62,7 @@
 				// border-top: dashed 1px $baseWhiteColor;
 				padding: $baseMargin;
 				margin: $baseMargin auto 0;
-				width: $basePageWidth/2;
+				width: 100%;
 				border-radius: $baseRadiusSize;
 				//@include bgColorWithAlpha($baseBackgroundColor, 0.4);
 			}
@@ -73,8 +73,14 @@
 			z-index: 1;
 			padding: $baseMargin*2;
 			background-color: $lightBackgroundColor;
-			box-shadow: 0 0 120px rgba(0,0,0,0.3);
+			box-shadow: $baseBoxShadow;
 			border: solid 1em $lighterBackgroundColor;
+
+			h1{
+				&:first-of-type{
+					margin-top: 0;
+				}
+			}
 
 		}
 	}
@@ -82,5 +88,7 @@
 	@import "footnote";	
 	@import "disqus";
 	@import "tag";
+	@import "toc";
+	@import "related";
 }
 

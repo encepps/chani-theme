@@ -16,13 +16,35 @@ layout : default
 				{% if page.tags != null %}<p>Tags : {% for tag in page.tags %}<a href="/logs/tags#{{tag}}" class="tag">{{tag}}</a>{% endfor %}</p>{% endif %}	
 			</div>
 			
+		</div>	
+		<div class="post-content clearfix">
+			{% if page.toc == true %}
+				<div class="toc">
+					<p>Table of Content</p>
+					{{ content | toc_only }}
+				</div>
+			{% endif %}
+			{{ content | inject_anchors }}
 		</div>
-		
-		<div class="post-content">
-			
-			{{content}}
-		</div>
+
 		{% include disqus.html %}
+		{% include related.html %}
+		
 	</article>
 
 </div>
+
+<!-- heading anchor -->
+<script>
+	$(function() {
+	  return $("h1, h2, h3, h4, h5, h6").each(function(i, el) {
+	    var $el, icon, id;
+	    $el = $(el);
+	    id = $el.attr('id');
+	    icon = '<i class="fa fa-link"></i>';
+	    if (id) {
+	      return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+	    }
+	  });
+	});
+</script>

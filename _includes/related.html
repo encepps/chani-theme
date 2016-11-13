@@ -1,0 +1,16 @@
+<h1>RELATED POSTS</h1>
+{% if site.related_posts != null %}
+	<div class="related">
+		<ul class="clearfix">
+			{% for post in site.related_posts %}
+				<li class="card">
+					<a href="{{post.url}}" title="{{post.title}}">
+						<p class="title">{{post.title | truncate: 12}}</p>
+						<p class="description">{{post.description | truncate: 24 }}</p>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+		
+	</div>
+{% endif %}

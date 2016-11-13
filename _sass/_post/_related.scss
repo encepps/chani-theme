@@ -1,0 +1,29 @@
+.related{
+	ul{
+		font-size: 0;
+		overflow: visible;
+		margin-left: 0;
+		li.card{
+			float: left;
+			width: 24%;
+			margin-left: 1.3333%;
+			padding: $baseMargin;
+			display: inline-block;
+			font-size: $baseFontSize;
+			height: 120px;
+			background-color: $lightBackgroundColor;
+			box-shadow: $baseBoxShadow;
+			&:first-child{
+				margin-left: 0;
+			}
+			a{
+				.title{
+
+				}
+				.description{
+					margin-top: $baseMargin;
+				}
+			}
+		}
+	}
+}

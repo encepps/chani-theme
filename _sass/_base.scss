@@ -28,6 +28,8 @@ h1{
 	&:first-child{
 		margin: 0 0 10px;
 	}
+
+
 }
 
 h2{
@@ -67,17 +69,24 @@ p, ul{
 	margin-left: $baseMargin;
 }
 
-ul{
+ul, ol{
 	margin-top: $baseMargin;
 	li{
 		list-style-type: square;
 		margin-left: $baseMargin;
+		
 		p{
 			margin-left: 0;
 		}
+
 		ul{
 			margin-top: 0;
 		}
+	}
+}
+ol{
+	li{
+		list-style: decimal;
 	}
 }
 
@@ -87,6 +96,11 @@ code{
 	padding: 0px 4px 2px;
     display: inline-block;
     // color: $baseWhiteFontColor;
+}
+
+//iamges
+img{
+	max-width: 100%;
 }
 
 pre.highlight{
