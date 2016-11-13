@@ -1,7 +1,7 @@
 .toc{
 
 	background-color: $lighterBackgroundColor;
-	padding: $baseMargin;
+	padding: $baseMargin/1.5;
 	display: inline-block;
 	border-radius: $baseRadiusSize;
 	max-width: $tocWidth;
@@ -13,7 +13,12 @@
 		//
 	}
 
+	p{
+		margin: 0;
+	}
+
 	ul{
+		margin: 0;
 		li{
 			&.toc-h1{
 				margin-left: $baseMargin;
