@@ -1,64 +1,65 @@
-.post-wrapper{
+.post-wrapper {
 
 	overflow: visible;
 
 	.post-title-background {
-	    position: fixed;
-	    z-index: -1;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: $postHeaderBackgroundHeight;
-	    background-image: url("/assets/images/base-bg.jpg");
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    background-position: center;
-	    &:before{
-	    	content: ' ';
-	    	width: 100%;
-	    	height: 100%;
-	    	background-color: rgba(55,71,79,0.4);
-	    	position: absolute;
-	    }
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: $postHeaderBackgroundHeight;
+		height: 100%;
+		background-image: url("/assets/images/base-bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		&:before {
+			content: ' ';
+			width: 100%;
+			height: 100%;
+			background-color: rgba(55, 71, 79, 0.4);
+			position: absolute;
+		}
 	}
 
-	.post{
+	.post {
 		max-width: $basePageWidth;
 		margin: $baseMargin auto;
 
-		.post-header-thumbnail{
+		.post-header-thumbnail {
 			max-height: 80px;
 		}
 
-		.post-header{
+		.post-header {
 			//height: $postHeaderHeight;
 			margin: $baseMargin*2 0 $baseMargin*2;
 			overflow: hidden;
 			text-align: center;
 			//background-color: rgba(0,0,0,0.2);
 			color: $baseWhiteFontColor;
-			
-			h1{
-				font-size: $baseFontLineHeight*3;
+
+			h1 {
+				font-size: $baseFontLineHeight*1.8;
 				line-height: $baseFontLineHeight*3;
 				margin: $baseMargin 0 $baseMargin/2;
 				color: #fff;
 			}
 
-			h2{
+			h2 {
 				font-size: $baseFontLineHeight;
 				color: $baseFontColor;
 				margin-top: 0;
 			}
 
-			p{
+			p {
 				margin-left: 0;
 				margin-top: $baseMargin/2;
-				&:first-child{
+				&:first-child {
 					margin-top: 0;
 				}
 			}
-			.post-info{
+			.post-info {
 				// border-top: dashed 1px $baseWhiteColor;
 				padding: $baseMargin;
 				margin: $baseMargin auto 0;
@@ -68,7 +69,7 @@
 			}
 		}
 
-		.post-content{
+		.post-content {
 			position: relative;
 			z-index: 1;
 			padding: $baseMargin*2;
@@ -76,8 +77,16 @@
 			box-shadow: $baseBoxShadow;
 			border: solid 1em $lighterBackgroundColor;
 
-			h1{
-				&:first-of-type{
+			p{
+				text-indent: $baseMargin/2;
+			}
+			h1, h2{
+				border-bottom: solid 1px $lighterBackgroundColor;
+				padding-bottom:$baseMargin/2;
+			}
+
+			h1 {
+				&:first-of-type {
 					margin-top: 0;
 				}
 			}
@@ -85,10 +94,14 @@
 		}
 	}
 
-	@import "footnote";	
+	@import "footnote";
 	@import "disqus";
 	@import "tag";
 	@import "toc";
 	@import "related";
+
+	.ad-scrapper{
+		height: 200px;
+	}
 }
 

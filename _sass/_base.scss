@@ -13,7 +13,7 @@ body{
 	color: $baseFontColor;
 	font-size: $baseFontSize;
 	line-height: $baseFontLineHeight;
-	font-weight: lighter;
+	font-weight: 300;
 	height: 100%;
 }
 
@@ -66,7 +66,7 @@ b, strong{
 }
 
 p{
-	margin-top:$baseMargin/10;
+	margin-top:$baseMargin/4;
 }
 
 i, em{
@@ -105,6 +105,7 @@ code{
 	padding: 0px 4px 2px;
     display: inline-block;
 	line-height:$baseFontSize*1.4;
+	text-indent:0;
     // color: $baseWhiteFontColor;
 }
 

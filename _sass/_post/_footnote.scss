@@ -19,18 +19,13 @@
 			background-color: $lighterBackgroundColor;
 			position: relative;
 			padding: $baseMargin/2 $baseMargin/2 $baseMargin/2 $baseMargin*2;
-			margin-left: $baseMargin;
-			float: left;
-
-			&:first-child{
-				margin-left: 0;				
-			}
+			margin: $baseMargin;
 
 			&:before{
-				content: counter(my-badass-counter) ". ";
-				counter-increment: my-badass-counter;
+				content: counter(footnote-counter) ". ";
+				counter-increment: footnote-counter;
 				position: absolute;
-				left: 10px;
+				left: $baseMargin/2;
 			}
 		}
 	}
@@ -42,9 +37,7 @@
 sup {
 	font-size: $baseFontSize/2;
 	top: -0.5em;
-	margin-left: 0.25em;
 	position: relative;
-	display: inline-block;
 	padding: 0 2px;
 	border-radius: $baseMargin/10;
 	background-color: $lighterBackgroundColor;
@@ -53,7 +46,6 @@ sup {
 sub {
 	font-size: $baseFontSize/2;
 	bottom: -0.25em;
-	margin-left: 0.25em;
 	position: relative;
 	display: inline-block;
 	padding: 0 2px;
